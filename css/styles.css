@@ -36,7 +36,7 @@
   .section[data-bg="yellow"] {
     color: #333;
   }
-}
+
 
 /*
 *
@@ -277,8 +277,8 @@ body {
       -webkit-text-stroke: 1px white;
       color: transparent;
     }
-  }
-}
+  
+
 
 /*div:hover {
   animation-play-state: paused;
@@ -565,8 +565,8 @@ body {
         -webkit-text-stroke: 1px white;
         color: transparent;
       }
-  }
-}
+  
+
 
 /*div:hover {
   animation-play-state: paused;
