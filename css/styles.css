@@ -27,20 +27,21 @@
 }*/
 
 .container-tekst {
-  padding: 0px;
-  padding-top: 600px;
-  margin-left: 60px;
+  padding: 60px;
+  padding-top: 60px;
+  margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
   width: 100%;
   height: 100%;
   color: #F2CC8F;
 }
-  .a1 {
+/* 
+.a1 {
   margin: 50px;
 
 }
-  
+  */
 .container-kontakt {
   padding-top: 600px;
   margin-left: 30px;
@@ -123,7 +124,7 @@
     
 
   }
-
+/*
   .container-navbar {
     clear: both;
     overflow: auto;
@@ -156,7 +157,7 @@
     padding: 20px;
     padding-right: 100px;
   }
-
+*/
   /*
   *
   * konteiner pilt
@@ -230,6 +231,7 @@
     --item-font-size: 10vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
+    padding-top: 70px;
   }
   
   .marquee__inner{
@@ -238,7 +240,7 @@
     position: relative;
     transform: translate3d(var(--move-initial),0,0);
     animation: marquee 5s linear infinite;
-    //animation-play-state: paused;
+   
   }
   
   .marquee span{
@@ -558,9 +560,10 @@ body {
 /* Sticky footer style and color
 -------------------------------------------------- */
 footer {
-  padding-top: 30px;
+  padding-top: 200px;
   background-color: #292c2f;
   color: #bbb;
+  margin-bottom: 0;
 }
 
 footer a {
@@ -595,9 +598,9 @@ footer .form-control {
   color: #eb9100;
   text-align: center;
   -webkit-text-stroke: 2px #eb9100;
-  text-stroke: 2px #eb9100;
+  -webkit-text-stroke: 2px #eb9100;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 
 }
@@ -614,3 +617,9 @@ footer .form-control {
   color: #eb9100;
   text-fill-color: #eb9100;
 }
+.box-vaike {
+    height: 50px;
+    width: 35px;
+   
+}
+
