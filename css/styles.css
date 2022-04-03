@@ -18,9 +18,9 @@
       color: transparent;
     }
   */
-  div {
-    border: 1px solid red
-  }
+div {
+  border: 1px solid red
+}
 
 /*div:hover {
   animation-play-state: paused;
@@ -35,7 +35,11 @@
   width: 100%;
   height: 100%;
   color: #F2CC8F;
+  text-align: justify;
+  text-align-last: justify;
+  text-justify: inter-character;
 }
+
 /* 
 .a1 {
   margin: 50px;
@@ -55,29 +59,30 @@
 *
 **/
 .dark-bg {
-    background-color: #3D405B;
-    height: 100vh;
+  background-color: #3D405B;
+  height: 100vh;
 
-  }
-  .footer-bg {
-    background-color: #3D405B;
-    height: 25vh;
+}
 
-  }
+.footer-bg {
+  background-color: #3D405B;
+  height: 25vh;
 
-  .hele-bg {
-    background-color: #f4f1de;
-    height: 100vh;
+}
 
-  }
+.hele-bg {
+  background-color: #f4f1de;
+  height: 100vh;
 
-  .footer {
-    background-color: #F2CC8F;
-  
-    margin-bottom: 0;
-    margin-top: 200px;
-    
-  }
+}
+
+.footer {
+  background-color: #F2CC8F;
+
+  margin-bottom: 0;
+  margin-top: 200px;
+
+}
 
 
 
@@ -85,45 +90,47 @@
 *projektcarusel
 *
 */
- .karusel {
-   margin-top: 70px;
- 
-  }
+.karusel {
+  margin-top: 70px;
+
+}
 
 /*
 *
 * pildi konteiner
 *
 */
-  .photo-frame {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin: 30px;
-    float: right;
-  }
+.photo-frame {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 30px;
+  float: right;
+}
 
-  .box {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 10;
+.box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 10;
 
-  }
+}
+
 /*
 *   height: 498px;
 *   width: 358px;
 '*/
-  .cover {
-    z-index: 9;
-    margin: 35px;
-    height: 100%;
-    width: 100%;
-    
+.cover {
+  z-index: 9;
+  margin: 35px;
+  height: 100%;
+  width: 100%;
 
-  }
+
+}
+
 /*
   .container-navbar {
     clear: both;
@@ -158,52 +165,77 @@
     padding-right: 100px;
   }
 */
-  /*
+/*
   *
   * konteiner pilt
   *
   */
-  .container-pilt{
+.container-pilt {
 
-    position: relative;
-    color: #F2CC8F;
-    margin: 90px;
-    float: right;
-    height: 498px;
-    width: 358px;
-  }
+  position: relative;
+  color: #F2CC8F;
+  margin: 90px;
+  float: right;
+  height: 498px;
+  width: 358px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 0;
+  margin: 20px;
+}
 
 
-
-  
-
-.box{
-    width: 100%;
-    height: 100%;            
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-    z-index: 7;
-    margin: 20px;
-  }
-
+/*
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 7;
+  margin: 20px;
+}
+*/
 .fotoraam {
-    width: 100%;
-    height: 100%;
-    border: 15px solid #F2CC8F;
-    position: absolute;
-    margin: auto;
-    padding: 15px 10px;
-    }
-    
+  width: 100%;
+  height: 100%;
+  border: 15px solid #F2CC8F;
+  position: absolute;
+  margin: auto;
+  padding: 15px 10px;
+}
+
+.container-pilt:hover .box {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 7;
+  margin: 20px;
+  cursor: pointer;
+
+
+
+}
+
 
 /*.stack-top{
     z-index: 9;
     margin: 20px;
 }
 ***/
-   
+
 
 /*div:hover {
   animation-play-state: paused;
@@ -214,86 +246,92 @@
     border: 1px solid red
   }
 */
-  /*
+/*
   *Marquee
   */
-  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-  .marquee{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    position: relative;
-    overflow: hidden;
-    --offset: 20vw;
-    --item-font-size: 10vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-    padding-top: 70px;
-  }
-  
-  .marquee__inner{
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial),0,0);
-    animation: marquee 5s linear infinite;
-   
-  }
-  
-  .marquee span{
-    white-space: nowrap;
-    font-size: 9.9vw;
-    padding: 0 2vw;
-  }
-  
-  .marquee:hover .marquee__inner{
-     animation-play-state: running;
-     opacity: 1;
-     transition-duration: 0.4s;
-  }
-  
-  @keyframes marquee {
-    0% {
-    transform: translate3d(var(--move-initial), 0, 0);
+.marquee {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  --offset: 20vw;
+  --item-font-size: 10vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  padding-top: 70px;
+}
+
+/* @media screen and (max-width: 991px) {
+    .marquee{
+     
+      padding-top: 30px;
     }
-  
-    100% {
-     transform: translate3d(var(--move-final), 0, 0);
-    }
-  }
-  
-  
+  */
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite;
+
+}
+
 .marquee span {
-
-    font-size: 5vw;
-    font-weight: bold;
-    padding: 0 2vw;
-    text-decoration:none;
-    color: rgba(255,255,255,1);
+  white-space: nowrap;
+  font-size: 9.9vw;
+  padding: 0 2vw;
 }
 
 .marquee:hover .marquee__inner {
-    
-    -webkit-text-stroke: 1px green;
-    color: transparent;
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: running;
+  opacity: 1;
+  transition-duration: 0.4s;
+}
 
-    
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+
+.marquee span {
+
+  font-size: 5vw;
+  font-weight: bold;
+  padding: 0 2vw;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.marquee:hover .marquee__inner {
+
+  -webkit-text-stroke: 1px green;
+  color: transparent;
+  animation-play-state: paused;
+  cursor: pointer;
+
+
 
 }
 
 @keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
 
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
-    }
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
 }
 
 /*animation-play-state: running;'*/
@@ -391,7 +429,7 @@ body {
   height: 90vh;
   width: 100vw;
   background: transparent;
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,10 +573,12 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 300px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -549,12 +589,13 @@ body {
 
 /* Taller footer on small screens */
 @media (max-width: 567em) {
-    body {
-      margin-bottom: 700px;
-    }
-    .footer {
-      height: 700px;
-    }
+  body {
+    margin-bottom: 700px;
+  }
+
+  .footer {
+    height: 700px;
+  }
 }
 
 /* Sticky footer style and color
@@ -568,27 +609,30 @@ footer {
 
 footer a {
   color: #999;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-footer a:hover, footer a:focus {
+footer a:hover,
+footer a:focus {
   color: #aaa;
-  text-decoration:none;
-  border-bottom:1px dotted #999;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
 }
 
 footer .form-control {
-    background-color: #F2CC8F;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: 1px solid #292c2f;
-    resize: none;
-    color: #d1d2d2;
-    padding: 0.7em 1em;
+  background-color: #F2CC8F;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid #292c2f;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
 }
+
 .btn-secondary {
   border: 1px solid red;
   color: #eb9100;
 }
+
 .h1-a {
 
   font-family: 'Montserrat', sans-serif;
@@ -606,7 +650,7 @@ footer .form-control {
 }
 
 .h1:hover {
-    
+
   -webkit-text-stroke: 1px green;
   color: transparent;
   animation-play-state: paused;
@@ -617,9 +661,9 @@ footer .form-control {
   color: #eb9100;
   text-fill-color: #eb9100;
 }
-.box-vaike {
-    height: 50px;
-    width: 35px;
-   
-}
 
+.box-vaike {
+  height: 50px;
+  width: 35px;
+
+}

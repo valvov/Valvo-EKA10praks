@@ -1,5 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <style>
+.container-foto {
+
+position: relative;
+color: #F2CC8F;
+margin: 90px;
+float: right;
+height: 498px;
+width: 358px;
+}
+
+.box {
+width: 100%;
+height: 100%;
+position: absolute;
+bottom: 0;
+right: 0;
+opacity: 1;
+z-index: 7;
+margin: 20px;
+}
+
+
+/*
+.box {
+width: 100%;
+height: 100%;
+position: absolute;
+bottom: 0;
+right: 0;
+opacity: 1;
+z-index: 7;
+margin: 20px;
+}
+*/
+.fotoraam {
+width: 100%;
+height: 100%;
+border: 15px solid #F2CC8F;
+position: absolute;
+margin: auto;
+padding: 15px 10px;
+z-index: 1;
+}
+/*
+.box::after {
+z-index: -7;
+}
+*/ˇ
+
+.container-foto:hover .fotoraam {
+
+width: 100%;
+height: 100%;
+position: relative;
+bottom: 0;
+right: 0;
+opacity: 1;
+z-index: -7;
+margin: 20px;
+cursor: pointer;
+transition-delay: 0.3s;
+transform: translate;
+
+
+
+}
+
+
+  </style>
   <head>
     <title>Horizontal News Ticker</title>
     <link rel="stylesheet" href="h-ticker.css">
@@ -36,5 +106,10 @@
       <div class="hitem">Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
       <div class="hitem">Pellentesque auctor molestie orci ut blandit.</div>
     </div></div>
+    <div class="container-foto">
+      <div class="box fotoraam" class="img-fluid"></div>
+      <img class="box" src="img/portree.jpg" class="img-fluid">
+
+    </div>
   </body>
 </html>
