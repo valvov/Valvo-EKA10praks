@@ -32,17 +32,16 @@ function toggleState3() {
 }
 
 let imgObject = [
-  "https://placeimg.com/450/450/any",
-  "https://placeimg.com/450/450/animals",
+  "https://placekitten.com/g/450/450",
+  "https://placekitten.com/g/451/451",
+  "https://placekitten.com/g/452/452",
+  "https://placekitten.com/g/453/453",
+  "https://placekitten.com/g/454/454",
+  "https://placekitten.com/g/455/455",
   "https://placeimg.com/450/450/architecture",
   "https://placeimg.com/450/450/nature",
   "https://placeimg.com/450/450/people",
   "https://placeimg.com/450/450/tech",
-  "https://picsum.photos/id/1/450/450",
-  "https://picsum.photos/id/8/450/450",
-  "https://picsum.photos/id/12/450/450",
-  "https://picsum.photos/id/15/450/450",
-  "https://picsum.photos/id/5/450/450"
 ];
 
 let mainImg = 0;

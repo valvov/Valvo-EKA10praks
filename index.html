@@ -16,22 +16,7 @@
 
     <link href="css/styles.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Montserrat, sans-serif;
-        }
 
-        .navbar-brand {
-            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik01MDQuMzMsNDQ5Yy0xLjc3LTYuOC00NC43My0xNjcuNTItMTY0LjIxLTIzMi45MS00NC42NS0yNC40My05Ni4yLTQxLjQ1LTE0Ni01Ny45MUMxMTUsMTMyLjA4LDQwLjI5LDEwNy40MiwyNiw1OS42NWE2LjIyLDYuMjIsMCwwLDAtMTIsLjI0Yy0uOSwzLjUtMjEuNTMsODYuMzgsMTUuNjUsMTM3Ljk0LDE2LjgsMjMuMjksNDIuNjYsMzYuMzMsNzYuODUsMzguNzUsMi44OC4yLDUuNjEuNDIsOC40NC42Myw0LjE1LDE1LjE2LDIyLjE0LDYwLjYzLDg5LjYxLDY2LDEyLjI1LDEsMjQuMTcsMi4yNSwzNS45LDMuNjUsNC45MiwxNC4xNiwyNi44NCw1Ny42LDExNCw3My4wNyw2Mi43OCwxMS4xNCwxMTQsMzEuMTgsMTMxLjIxLDUxLjI1LDQuMzksMTIuNjgsNi41MywyMC42Miw2LjYzLDIxYTYuMiw2LjIsMCwwLDAsNiw0LjY1LDYuNTYsNi41NiwwLDAsMCwxLjU3LS4yQTYuMjMsNi4yMywwLDAsMCw1MDQuMzMsNDQ5Wk0zOS43NCwxOTAuNThDMTYsMTU3LjczLDE4Ljc1LDEwOC41MiwyMi41NSw4MS44M2MyNi4wNyw0MS40Myw5Mi4zNCw2My4zMSwxNjcuNjIsODguMTYsNDkuMzIsMTYuMjksMTAwLjMzLDMzLjEzLDE0NCw1NywzMS40NiwxNy4yMSw1Ny41Myw0MS44LDc4LjgsNjguNDRDMzcyLDI2OS4zOCwzMDUuNTgsMjM4LjIyLDEwNy4zNSwyMjQuMTgsNzcsMjIyLDU0LjI4LDIxMC43MywzOS43NCwxOTAuNThabTg4LjM2LDQ3LjY0YzIwMi4zOCwxNi40MiwyNTQuMzYsNTEuNDYsMjkyLjY0LDc3LjI4LDQuMzYsMi45NSw4LjU4LDUuOCwxMi44NCw4LjUxLDUuMDksNy43Nyw5LjgxLDE1LjU1LDE0LjE4LDIzLjIyLTM4LjM3LTE5Ljc4LTExNS42OS00MS40Mi0yMDEuMTktNTIuMTUtLjE0LDAtLjI5LDAtLjQ0LS4wNi0xMy4zOS0xLjY3LTI2Ljk0LTMuMTMtNDAuNjEtNC4yMkMxNTAuNDksMjg2LjQzLDEzMy4yMSwyNTMuNTMsMTI4LjEsMjM4LjIyWk0zNTYuNjMsMzY3LjY4Yy03MC44My0xMi41Ny05NC41MS00My43OS0xMDItNTkuMTEsMTEwLjI0LDE0Ljg3LDE5Mi43Nyw0Ni4yNywyMDUuNjEsNjIsNi43NSwxMy41NSwxMi4yOSwyNi4yNSwxNi44MSwzNy41QzQ1MS4xLDM5MS40OSw0MDcuOTQsMzc2Ljc4LDM1Ni42MywzNjcuNjhaIi8+PC9zdmc+");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 48px;
-            height: 48px;
-        }
-
-        .navbar-nav .nav-item:hover {
-            background-color: rgba(180, 190, 203, 0.4);
-        }
     </style>
 
 
@@ -40,57 +25,50 @@
 
 <body>
     <div class="hero-bg dark-bg">
+        <div class="container-navbar d-none d-sm-block">
+            <div class="logo">
+                <img src="img/logo.svg" alt="" width="70" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="#pildid"></a>PILDID</li>
+                    <li><a class="nav-link" href="#projektid"></a>PROJEKTID</li>
+                    <li><a class="nav-link" href="#kontaktid"></a>KONTAKTID</li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-md-auto gap-2">
-                            <li class="nav-item rounded">
-                                <a class="nav-link active" aria-current="page" href="#"><i
-                                        class="bi bi-house-fill me-2"></i>Home</a>
-                            </li>
-                            <li class="nav-item rounded">
-                                <a class="nav-link" href="#"><i class="bi bi-people-fill me-2"></i>About</a>
-                            </li>
-                            <li class="nav-item rounded">
-                                <a class="nav-link" href="#"><i class="bi bi-telephone-fill me-2"></i>Contact</a>
-                            </li>
-                            
-                        </ul>
+
+
+
+            <div class="row justify-content-between">
+                <div class="marquee mb-10">
+                    <div class="marquee__inner" aria-hidden="true">
+                        <span>Tere!</span>
+                        <span>Tere!</span>
+                        <span>Tere!</span>
+                        <span>Tere!</span>
+                        <span>Tere!</span>
+                        <span>Tere!</span>
+                        <span>Tere!</span>
+                        <span>Tere!</span>
+                        <span>Tere!</span>
                     </div>
                 </div>
-            </nav>
-
-
-        </div>
-        <div class="row justify-content-between">
-            <div class="marquee mb-10">
-                <div class="marquee__inner" aria-hidden="true">
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                    <span>Tere!</span>
-                </div>
             </div>
+
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <div class="container-tekst" id="tutvustus">
+                    <div class="container" id="tutvustus">
                         <div class="row justify-content-center ">
-                            <div class="container a1">
+                            <div class="container-tekst">
+
                                 <h1 class="mb-5"> TUTVUSTUS</h1>
+
                             </div>
-                            <div class="container me-3">
+                            <div class="container-tutvustus me-3">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
@@ -144,7 +122,7 @@
                         <div class="row justify-content-start">
                             <div class="col-3 mp-5">
                                 <button type="button" class="btn btn-secondary-outline btn-lg">
-                                    <a href="#auru masin" data-slide-to="0" target="_blank"></a>
+                                    <a href="#projektid" data-slide-to="0" target="_blank"></a>
                                     <h1 class="h1-a">Auru masinad</h1>
                                 </button>
 
@@ -153,7 +131,7 @@
                         <div class="row justify-content-center">
                             <div class="col-3 mp-5">
                                 <button type="button" class="btn btn-secondary-outline btn-lg">
-                                    <a href="" target="_blank"></a>
+                                    <a href="projektid" target="_blank"></a>
                                     <h1 class="h1-a">Rummi pallid</h1>
                                 </button>
 
@@ -166,17 +144,9 @@
                     <div class="row justify-content-start">
                         <div class="col-3 mp-5">
                             <button type="button" class="btn btn-secondary-outline btn-lg">
-                                <div class="col-6">
-                                    <div class="container">
-                                        <h1 class="h1-a">Vanad autod</h1>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="container">
-                                        <img class="box-vaike" src="img/portree.jpg"
-                                            class="img-fluid d-none d-md-inline">
-                                    </div>
-                                </div>
+                                <a href="projektid" target="_blank"></a>
+                                <h1 class="h1-a">Vanad autod</h1>
+
 
                             </button>
 
@@ -197,7 +167,7 @@
         </div>
 
     </div>
-    <div class="hero-bg dark-bg">
+    <div class="hero-bg dark-bg" id="projektid">
         <div class="marquee">
             <div class="marquee__inner" aria-hidden="true">
                 <span>Projektid</span>
@@ -226,7 +196,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="container-tekst">
                                 <div class="row-4 justify-content-center">
-                                    <h1 class="mb-5">Auru masinad</h1>
+                                    <h1 class="h1-b mb-5">Auru masinad</h1>
                                 </div>
                                 <div class="row-6 justify-content-center">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -247,7 +217,7 @@
                         <div class="col-md-6 d-none d-sm-block">
                             <div class="container-pilt">
                                 <div class="box fotoraam" class="img-fluid"></div>
-                                <img class="box stack-top" src="img/projekt.jpg" class="img-fluid">
+                                <img class="box stack-top" src="img/auru_masin.jpg" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -255,12 +225,12 @@
 
 
 
-                <div class="carousel-item ">
+                <div class="carousel-item " id="vanad autod">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="container-tekst">
                                 <div class="row-4 justify-content-center">
-                                    <h1 class="mb-5">Vanad autod</h1>
+                                    <h1 class="h1-b mb-5">Vanad autod</h1>
                                 </div>
                                 <div class="row-6 justify-content-center">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -286,13 +256,13 @@
                     </div>
                 </div>
 
-                <div class="carousel-item ">
+                <div class="carousel-item " id="rummi pallid">
 
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="container-tekst">
                                 <div class="row-4 justify-content-center">
-                                    <h1 class="mb-5">Rummi pallid</h1>
+                                    <h1 class="h1-b mb-5">Rummi pallid</h1>
                                 </div>
                                 <div class="row-6 justify-content-center">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -313,7 +283,7 @@
                         <div class="col-md-6 d-none d-sm-block">
                             <div class="container-pilt">
                                 <div class="box fotoraam" class="img-fluid"></div>
-                                <img class="box stack-top" src="img/projekt.jpg" class="img-fluid">
+                                <img class="box stack-top" src="img/rummi_pall.jpg" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -385,14 +355,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <h5><i class="fa fa-road"></i>VV</h5>
+                        <h5><i class="fa fa-road"></i></h5>
                         <div class="row">
                             <div class="col-6">
                                 <ul class="list-unstyled">
                                     <li><a href="#tuvustus">Tutvustus</a></li>
                                     <li><a href="#projekt">Projektid</a></li>
-                                    <li><a href="#pildid">pildid</a></li>
-                                    <li><a href="">Team</a></li>
+                                    <li><a href="#pildid">P ildid</a></li>
+
                                 </ul>
                             </div>
                             <div class="col-6">
@@ -435,6 +405,7 @@
                     </div>
                 </div>
             </div>
+
         </footer>
 
     </div>
@@ -449,6 +420,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="scripts.js" type="text/javascript"></script>
+
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
